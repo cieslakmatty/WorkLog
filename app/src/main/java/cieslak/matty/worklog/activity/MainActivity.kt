@@ -18,4 +18,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LogWorkActivity::class.java)
         startActivity(intent)
     }
+
+    fun showLastWeek(view: View) {
+        val intent = Intent(this, ShowLastWeekActivity::class.java)
+        startActivity(intent)
+    }
 }

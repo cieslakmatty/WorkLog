@@ -12,11 +12,25 @@
         android:id="@+id/log_new_day_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
         android:background="@color/green_800"
         android:onClick="navigateLogWork"
         android:text="@string/log_new_work_day_btn"
         android:textColor="#ffffff"
         android:textSize="15sp"
-        android:textStyle="bold"
-        android:layout_centerVertical="true"/>
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/show_last_week_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_new_day_btn"
+        android:layout_centerVertical="true"
+        android:background="@color/green_800"
+        android:onClick="showLastWeek"
+        android:text="@string/show_last_week_btn"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 </RelativeLayout>

@@ -23,12 +23,8 @@ import java.util.*
 class LogWorkActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     TimePickerDialog.OnTimeSetListener {
 
-    var minute: Int = 0
-    var hour: Int = 0
-    var day: Int = 0
-    var month: Int = 0
-    var year: Int = 0
-    var canBeSaved = false
+    private var minute: Int = 0
+    private var hour: Int = 0
     private var currentBtn = StartEndEnum.START
     private var startDateTime = LocalDateTime.MIN
     private var endDateTime = LocalDateTime.MIN
@@ -57,7 +53,6 @@ class LogWorkActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     }
 
     private fun showDatePicker() {
-
         val calendar: Calendar = Calendar.getInstance()
         val timePickerDialog = TimePickerDialog(
             this@LogWorkActivity,
@@ -85,10 +80,6 @@ class LogWorkActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     }
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, day: Int) {
-        this.day = day
-        this.month = month
-        this.year = year
-
         when (currentBtn) {
             StartEndEnum.START -> {
                 startDateTime = LocalDateTime.of(year, month, day, hour, minute)

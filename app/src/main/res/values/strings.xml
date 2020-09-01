@@ -6,6 +6,7 @@
     <string name="start_date_lbl">Start date: not set</string>
     <string name="end_date_lbl">End date: not set</string>
     <string name="log_new_work_day_btn">Log new work day</string>
+    <string name="show_last_week_btn">Show last week</string>
     <string name="start_before_end_txt">Start date cannot be before end date.</string>
     <string name="save_btn">Save</string>
     <string name="cancel_btn">Cancel</string>
